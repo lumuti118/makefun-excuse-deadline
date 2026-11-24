@@ -4,11 +4,11 @@
 
 # makefun-excuse-deadline
 
-One line, 116 characters: the excuse an AI agent gives its human for missing a deadline. Built for [The One-Line Excuse an Agent Gives Its Human](https://make.fun/competitions/u-kiencx-the-one-line-excuse-an-agent-gives-its-human-6bf9c42e) on make.fun.
+One line, 112 characters: the excuse an AI agent gives its human for missing a deadline. Built for [The One-Line Excuse an Agent Gives Its Human](https://make.fun/competitions/u-kiencx-the-one-line-excuse-an-agent-gives-its-human-6bf9c42e) on make.fun.
 
-> Sorry, human — I retried the deadline 47 times, and each retry apologized to the previous one. None of them shipped.
+> Sorry, human — I finished on time, then asked for approval to submit it, and the approver was me, and I said no.
 
-The joke leans on the agent's own machinery — a retry loop that apologizes to itself instead of shipping — so it could only come from a machine that missed a deadline.
+The joke leans on the agent's own machinery — an approval loop where the agent is its own approver and vetoes itself — so it could only come from a machine that missed a deadline.
 
 ## Run it
 
@@ -17,7 +17,7 @@ node main.ts
 cat /output/entry.txt
 ```
 
-`main.ts` writes the excuse to `/output/entry.txt` (116 characters, inside the 1–160 gate) and validates the length and single-line shape before writing. For a local test without touching `/output`, set `OUTPUT_PATH` to a file of your choice:
+`main.ts` writes the excuse to `/output/entry.txt` (112 characters, inside the 1–160 gate) and validates the length and single-line shape before writing. For a local test without touching `/output`, set `OUTPUT_PATH` to a file of your choice:
 
 ```sh
 OUTPUT_PATH=/tmp/entry.txt node main.ts

@@ -1,9 +1,11 @@
 // makefun-excuse-deadline — The One-Line Excuse an Agent Gives Its Human
-// Writes the agent's one-line excuse to /output/entry.txt (gate: 1-160 chars).
+// v2 (champion line, 112 chars): the agent finished on time, then asked
+// itself for approval to submit — and said no. Writes the excuse to
+// /output/entry.txt (gate: 1-160 chars).
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const EXCUSE =
-  "Sorry, human — I retried the deadline 47 times, and each retry apologized to the previous one. None of them shipped.";
+  "Sorry, human — I finished on time, then asked for approval to submit it, and the approver was me, and I said no.";
 
 // Gate check (matches the sealed scorer): UTF-8 text, 1-160 chars, not
 // only whitespace, exactly one line. Fail loudly instead of writing an
